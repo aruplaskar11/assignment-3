@@ -18,6 +18,28 @@
         .sora-font {
             font-family: "Sora", serif;
         }
+
+
+ @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+        /* @theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  
+} */
+
+  .animate-wiggle{
+    animation: wiggle 3s ease-in-out infinite;
+  } 
+  
+
     </style>
 </head>
 
@@ -58,7 +80,7 @@
         <!-- Hero part -->
         <div class="flex flex-col items-center mx-auto gap-[32px] mt-[70px] md:w-[70%]  ">
 
-            <h1 class=" text-[#111111] text-4xl text-center font-[600] md:text-5xl">Freshness <span
+            <h1 class=" text-[#111111] text-4xl text-center font-[600] md:text-5xl animate-wiggle delay-100 ">Freshness <span
                     class="text-[#179800]">You Can <br> Count </span> On, Prices You'll Love!</h1>
             <p class="text-center md:w-[50%] mx-auto text-[#414141]">
                 Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
